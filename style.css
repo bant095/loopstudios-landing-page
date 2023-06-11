@@ -12,10 +12,11 @@ body {
 /* HEADER SECTION */
 
 .header-section {
-  background-image: url(./images/desktop/image-hero.jpg);
+  background: url(./images/desktop/image-hero.jpg) no-repeat center center/cover;
   height: 500px;
-  background-repeat: no-repeat;
-  background-position: center;
+  width: auto;
+  /* background-repeat: no-repeat;
+  background-position: center; */
 }
 
 /* Nav Bar */
@@ -48,6 +49,13 @@ body {
 }
 
 #nav-bar .menu ul li a:hover {
+  border-bottom: 2px solid whitesmoke;
+  padding-bottom: 10px;
+  width: auto;
+}
+
+#hamburger {
+  display: none;
 }
 
 /* headline */
@@ -323,4 +331,249 @@ body {
 .socials-copyright p {
   font-size: 13px;
   color: hsl(0, 0%, 55%);
+}
+
+/* ===================================== */
+/* =====MEDIA QUERY==== */
+
+/* Max-width of 1024px */
+@media (max-width: 1024px) {
+  /* header section */
+  .header-section {
+    width: 100%;
+    background-position: cover;
+    object-fit: center;
+  }
+
+  #nav-bar {
+    padding: 30px 40px 80px 40px;
+    justify-content: space-between;
+  }
+  #nav-bar img {
+    height: 20px;
+  }
+
+  .headline h1 {
+    margin: 40px;
+  }
+
+  /* Content section */
+  .content-section {
+    width: auto;
+    margin: 70px 40px 10px 40px;
+  }
+
+  .content-section-1 {
+    width: 50%;
+    height: 400px;
+  }
+
+  .content-section-1 img {
+    height: 400px;
+  }
+
+  .content-section-2 {
+    width: 50%;
+    height: 400px;
+    padding: 30px;
+    margin-left: -10px;
+  }
+
+  .content-section-2 h1 {
+    font-size: 2rem;
+    padding-right: 70px;
+    line-height: 30px;
+  }
+
+  .content-section-2 p {
+    line-height: 25px;
+    font-size: 14px;
+  }
+
+  /* Creation Section */
+  .creation-section {
+    width: 100%;
+    padding: 0 40px;
+  }
+
+  .our-creation {
+    width: 100%;
+    padding-right: 40px;
+  }
+
+  /* Each Section */
+
+  .each-creation {
+    width: 100%;
+    padding-top: 20px;
+    display: flex;
+    justify-content: space-around;
+  }
+
+  .soccer-team h2 {
+    padding-right: 0;
+  }
+
+  .each-creation .the-grid {
+    margin: 20px 20px 20px 0;
+  }
+
+  .each-creation .from-up h2 {
+    padding-right: 0;
+  }
+
+  /* FOOTER */
+  .footer-section {
+    width: 100%;
+  }
+}
+
+/* Max-width of 768px  */
+
+@media (max-width: 768px) {
+  .header-section {
+    height: 400px;
+  }
+
+  .headline h1 {
+    width: 350px;
+    font-size: 2.5rem;
+    padding: 15px;
+  }
+
+  .content-section {
+    width: 100%;
+  }
+
+  .content-section-1 img {
+    height: 300px;
+  }
+
+  .content-section-2 {
+    padding-right: 30px;
+    height: 300px;
+    margin-top: 80px;
+    margin-left: -40px;
+  }
+
+  .content-section-2 h1 {
+    font-size: 1.5rem;
+    padding-right: 20px;
+  }
+
+  .content-section2 p {
+    font-size: 13px;
+    padding-right: 5px;
+  }
+
+  .our-creation {
+    padding-bottom: 30px;
+  }
+
+  /* each creation */
+
+  .each-creation {
+    display: flex;
+    justify-content: space-evenly;
+    width: 100%;
+  }
+  .deep-earth {
+    width: 27%;
+  }
+
+  .night-arcade {
+    width: 27%;
+  }
+
+  .soccer-team {
+    width: 27%;
+  }
+
+  .the-grid {
+    width: 27%;
+  }
+
+  .from-up {
+    width: 27%;
+  }
+
+  .pocket-borealis {
+    width: 27%;
+  }
+
+  .the-curiosity {
+    width: 27%;
+  }
+
+  .make-it {
+    width: 27%;
+    padding: 0;
+  }
+
+  /* footer */
+  .footer-section {
+    width: 100%;
+    padding: 50px 70px;
+    text-align: center;
+    height: 250px;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .socials-copyright .socials {
+    text-align: center;
+    padding-top: 30px;
+  }
+}
+
+/* Max-width of 500px */
+
+@media only screen and (max-width: 500px) {
+  .header-section {
+    width: 100%;
+    height: 300px;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .header-section #nav-bar img {
+    gap: 10rem;
+    padding-right: 30px;
+    justify-content: space-between;
+  }
+  .headline h1 {
+    margin-top: 0;
+    margin-bottom: 50px;
+    font-size: 1.6rem;
+  }
+
+  #hamburger {
+    display: block;
+    margin-left: 200px;
+    /* background-color: green; */
+  }
+
+  #hamburger img {
+    margin-left: 50px;
+  }
+
+  .menu {
+    width: 100%;
+    margin-left: -470px;
+  }
+
+  .menu {
+    background-color: black;
+    text-align: left;
+    padding: 30px 40px;
+    height: 220px;
+    width: 100%;
+    margin-top: 40px;
+  }
+
+  .menu ul {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+  }
 }
