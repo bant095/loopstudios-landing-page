@@ -1,0 +1,123 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Alata", sans-serif;
+}
+
+/* ================= */
+/* HEADER SECTION */
+
+.header-section {
+  background-image: url(./images/desktop/image-hero.jpg);
+  height: 500px;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+/* Nav Bar */
+#nav-bar {
+  display: flex;
+  flex-direction: row;
+  padding: 30px 100px;
+  justify-content: space-between;
+}
+
+#nav-bar img {
+  height: 30px;
+}
+
+#nav-bar .menu ul {
+  display: flex;
+  width: 400px;
+  /* background-color: aquamarine; */
+}
+
+.menu li {
+  text-decoration: none;
+}
+
+#nav-bar .menu ul li a {
+  padding-right: 30px;
+  text-decoration: none;
+  color: hsl(0, 0%, 100%);
+  transition: transform 0.25s ease-out;
+}
+
+#nav-bar .menu ul li a:hover {
+}
+
+/* headline */
+
+.headline h1 {
+  font-family: "Josefin Sans", sans-serif;
+  text-transform: uppercase;
+  font-weight: 300;
+  color: hsl(0, 0%, 100%);
+  border: 1px solid hsl(0, 0%, 100%);
+  width: 450px;
+  margin: 50px 100px;
+  padding: 30px;
+  font-size: 3rem;
+}
+
+/* ================ */
+/* CONTENT SECTION */
+
+.content-section {
+  display: flex;
+  flex-direction: row;
+  margin: 80px 100px;
+  width: 90%;
+  background-color: red;
+}
+
+.content-section-1 {
+  background-color: green;
+  width: 100%;
+  height: 400px;
+}
+
+.content-section-1 img {
+  width: auto;
+  height: 400px;
+  object-fit: cover;
+}
+
+/* content section 2 */
+.content-section-2 {
+  margin-top: 130px;
+  padding: 30px;
+  background-color: white;
+  width: 70%;
+  height: 300px;
+  position: relative;
+  margin-right: 100px;
+  z-index: 1;
+}
+
+.content-section-2 h1 {
+  padding-bottom: 30px;
+  font-weight: 300;
+  font-family: "Josefin Sans", sans-serif;
+  text-transform: uppercase;
+  line-height: 35px;
+  font-size: 2rem;
+}
+
+.content-section-2 p {
+  line-height: 25px;
+  font-size: 15px;
+  width: 100%;
+}
+
+/* CREATION SECTION */
+
+.creation-section {
+  width: 100%;
+  background-color: red;
+  padding: 30px 100px;
+}
