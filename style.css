@@ -37,7 +37,7 @@ body {
 }
 
 .menu li {
-  text-decoration: none;
+  list-style: none;
 }
 
 #nav-bar .menu ul li a {
@@ -71,32 +71,31 @@ body {
   display: flex;
   flex-direction: row;
   margin: 80px 100px;
-  width: 90%;
-  background-color: red;
+  width: auto;
+  /* background-color: red; */
 }
 
+/* content section 1 */
 .content-section-1 {
-  background-color: green;
+  /* background-color: green; */
   width: 100%;
   height: 400px;
 }
 
 .content-section-1 img {
-  width: auto;
-  height: 400px;
+  height: 450px;
   object-fit: cover;
 }
 
 /* content section 2 */
 .content-section-2 {
   margin-top: 130px;
-  padding: 30px;
+  padding: 50px 80px;
   background-color: white;
-  width: 70%;
-  height: 300px;
+  width: 100%;
+  height: 400px;
   position: relative;
-  margin-right: 100px;
-  z-index: 1;
+  margin-left: -130px;
 }
 
 .content-section-2 h1 {
@@ -104,20 +103,224 @@ body {
   font-weight: 300;
   font-family: "Josefin Sans", sans-serif;
   text-transform: uppercase;
-  line-height: 35px;
-  font-size: 2rem;
+  line-height: 50px;
+  font-size: 3rem;
+  padding-right: 50px;
+  color: hsl(0, 0%, 41%);
 }
 
 .content-section-2 p {
-  line-height: 25px;
-  font-size: 15px;
+  line-height: 30px;
+  font-size: 16px;
   width: 100%;
+  padding-right: 10px;
+  color: hsl(0, 0%, 41%);
 }
 
+/* ================= */
 /* CREATION SECTION */
 
 .creation-section {
   width: 100%;
-  background-color: red;
+  /* background-color: red; */
+  padding: 0 100px;
+  text-transform: uppercase;
+  font-weight: 300;
+  font-family: "Josefin Sans", sans-serif;
+}
+
+.our-creation {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding-bottom: 70px;
+}
+
+.our-creation h2 {
+  font-weight: 300;
+  font-family: "Josefin Sans", sans-serif;
+  font-size: 2rem;
+  color: hsl(0, 0%, 41%);
+}
+
+/* See All BTN */
+.our-creation button {
+  background: none;
+  border: 1px solid hsl(0, 0%, 41%);
+  color: hsl(0, 0%, 41%);
+  text-transform: uppercase;
+  padding: 10px;
+  width: 120px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: all 0.1 linear;
+}
+
+.our-creation button:hover {
+  background-color: black;
+  color: white;
+}
+
+/* Each Creation */
+
+.each-creation {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+}
+
+.each-creation h2 {
+  color: hsl(0, 0%, 100%);
+  font-weight: 200;
+  font-family: "Josefin Sans", sans-serif;
+  padding: 320px 90px 10px 30px;
+}
+
+/* deep earth */
+.deep-earth {
+  background-image: url(./images/desktop/image-deep-earth.jpg);
+  height: 400px;
+  width: 23.6%;
+  background-repeat: no-repeat;
+  object-fit: center;
+  margin-right: 20px;
+}
+
+/* night arcade */
+
+.night-arcade {
+  background-image: url(./images/desktop/image-night-arcade.jpg);
+  height: 400px;
+  width: 23.6%;
+  background-repeat: no-repeat;
+  object-fit: center;
+  margin-right: 20px;
+}
+
+/* Soccer team VR */
+
+.soccer-team {
+  background-image: url(./images/desktop/image-soccer-team.jpg);
+  height: 400px;
+  width: 23.6%;
+  background-repeat: no-repeat;
+  object-fit: center;
+  margin-right: 20px;
+}
+
+/* the grid */
+
+.the-grid {
+  background-image: url(./images/desktop/image-grid.jpg);
+  height: 400px;
+  width: 23.6%;
+  background-repeat: no-repeat;
+  object-fit: center;
+}
+
+/* from-up */
+
+.from-up {
+  background-image: url(./images/desktop/image-from-above.jpg);
+  height: 400px;
+  width: 23.6%;
+  background-repeat: no-repeat;
+  object-fit: center;
+  margin-right: 20px;
+  margin-top: 20px;
+}
+
+/* pocket-borealis */
+
+.pocket-borealis {
+  background-image: url(./images/desktop/image-pocket-borealis.jpg);
+  height: 400px;
+  width: 23.6%;
+  background-repeat: no-repeat;
+  object-fit: center;
+  margin-right: 20px;
+  margin-top: 20px;
+}
+
+/*the-curiosity */
+
+.the-curiosity {
+  background-image: url(./images/desktop/image-curiosity.jpg);
+  height: 400px;
+  width: 23.6%;
+  background-repeat: no-repeat;
+  object-fit: center;
+  margin-right: 20px;
+  margin-top: 20px;
+}
+
+/* make-it */
+
+.make-it {
+  background-image: url(./images/desktop/image-fisheye.jpg);
+  height: 400px;
+  width: 23.6%;
+  background-repeat: no-repeat;
+  object-fit: center;
+  margin-top: 20px;
+}
+
+/* FOOTER SECTION */
+
+.footer-section {
+  background-color: black;
+  color: hsl(0, 0%, 100%);
+  margin-top: 100px;
+  display: flex;
+  justify-content: space-between;
   padding: 30px 100px;
+}
+
+.footer-menu img {
+  width: auto;
+  height: 20px;
+}
+
+.footer-section .footer-menu ul {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  text-decoration: none;
+  padding-top: 10px;
+  list-style: none;
+}
+
+.footer-menu ul li a {
+  text-decoration: none;
+  justify-content: space-around;
+  color: white;
+  padding-right: 15px;
+  font-size: 15px;
+}
+
+/* social and copyright */
+
+.socials-copyright .socials {
+  text-align: right;
+  padding-bottom: 10px;
+}
+
+.socials img {
+  padding-left: 10px;
+  cursor: pointer;
+  width: auto;
+  height: 20px;
+  transition: 0.1;
+  color: white;
+}
+
+.socials img:hover {
+  color: hsl(0, 0%, 55%);
+  width: auto;
+  height: 22px;
+}
+
+.socials-copyright p {
+  font-size: 13px;
+  color: hsl(0, 0%, 55%);
 }
